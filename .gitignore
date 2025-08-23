@@ -1,0 +1,5 @@
+.ssh/
+*.key
+*.crt
+*.pem
+.DS_Store
