@@ -14,7 +14,7 @@ This repository is a **step-by-step guide to learning Docker and Nginx**. It dem
 - Serves a basic HTML page
 
 **Usage**
-```bash
+bash
 cd 01-basic-nginx
 docker-compose up -d
 
@@ -108,5 +108,3 @@ This will:
 Oktay Keşan –  Cloud Practitioner
 GitHub: oktaykesan
 
-         Author://Oktay Keşan
-Aspiring Cloud Engineer 
