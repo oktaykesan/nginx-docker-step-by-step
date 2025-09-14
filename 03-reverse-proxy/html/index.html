@@ -1,1 +1,43 @@
-<h1>Hello Reverse Proxy!</h1>
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Proxy - Docker Tutorial</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255,255,255,0.15);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+        .api-test {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔄 Hello Reverse Proxy!</h1>
+        <p>Nginx Reverse Proxy örneği - Port: 8082</p>
+        <p>/api/ yolu httpbin.org'a yönlendiriliyor</p>
+        
+        <div class="api-test">
+            <p><strong>Test için:</strong></p>
+            <p>🔗 <code>/api/ip</code> - IP adresinizi gösterir</p>
+            <p>🔗 <code>/api/headers</code> - HTTP başlıklarınızı gösterir</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,1 +1,52 @@
-<h1>Hello SSL Self-Signed!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSL Self-Signed - Docker Tutorial</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 50px;
+            background: linear-gradient(135deg, #fc466b 0%, #3f5efb 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255,255,255,0.15);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+        .ssl-info {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 5px;
+        }
+        .warning {
+            background: rgba(255,165,0,0.3);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔒 Hello SSL Self-Signed!</h1>
+        <p>Self-signed SSL certificate - Port: 8443 (HTTPS)</p>
+        
+        <div class="warning">
+            ⚠️ Browser will show security warning!
+        </div>
+        
+        <div class="ssl-info">
+            <p><strong>SSL Features:</strong></p>
+            <p>🔐 TLS 1.2/1.3 support</p>
+            <p>🔄 HTTP → HTTPS redirect</p>
+            <p>🛡️ Security headers enabled</p>
+        </div>
+    </div>
+</body>
+</html>

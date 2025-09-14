@@ -1,11 +1,20 @@
-version: "3"
+version: "3.8"
+
 services:
   web:
-    image: nginx:alpine
+    image: nginx:1.25-alpine
+    container_name: nginx-ssl-web
     ports:
       - "8443:443"
+      - "8080:80"
     volumes:
       - ./html:/usr/share/nginx/html:ro
-      - ./ssl.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
       - ./certs:/etc/nginx/certs:ro
     restart: unless-stopped
+    networks:
+      - nginx-network
+
+networks:
+  nginx-network:
+    driver: bridge
